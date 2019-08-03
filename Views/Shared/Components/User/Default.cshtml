@@ -1,0 +1,9 @@
+﻿@if (ViewBag.User != null)
+{
+    <li><p>@ViewBag.User</p></li>
+    <a asp-action="LogOut" asp-controller="Account">Çıkış Yap</a>
+}
+else
+{
+    <li class="nav-item"><a asp-action="Login" asp-controller="Account" class="nav-link"> Giriş yap</a></li>
+}
